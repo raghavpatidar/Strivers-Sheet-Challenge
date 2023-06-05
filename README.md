@@ -1,13 +1,12 @@
 # Strivers-Sheet-Challenge
 
-<code>Hello connections, Striver (Raj Vikramaditya) announced SDE Sheet Challenge and I am participating in this challenge.🔥
-Let's push our boundaries, embrace the learning process, and strive for excellence together. 🌟🚀
-Stay tuned as I share my progress, insights, and learnings throughout this incredible journey. Feel free to connect with me if you're also participating in the challenge—I'd love to connect, support, and learn from each other. 🤝
+Hello connections, Striver (Raj Vikramaditya) announced SDE Sheet Challenge and I am participating in this challenge.🔥
+Let's push our boundaries, embrace the learning process, and strive for excellence together. 🌟🚀🤝
 Here's to the beginning of an amazing adventure! Wish me luck! 🍀
 This is the GitHub repo where I will be adding my codes
 And Do try the [SDE Sheet](https://lnkd.in/gcHXDXkw)
 #StriversSheetChallenge #DSA #SdeSheetChallenge
-</code>
+
 
 # Table Of Content
 - [Strivers-Sheet-Challenge](#strivers-sheet-challenge)
@@ -24,7 +23,10 @@ And Do try the [SDE Sheet](https://lnkd.in/gcHXDXkw)
 <h4>Logic :</h4>
 
 ```text
-mark starting of row and column to be zero for current i,j for example if matrix[i][j] == 0 mark matrix[i][0] = 0 and matrix[0][j] = 0 now traverse for specific row and column for mark the entire for and entire colum zero . special case first element [0][0];
+mark starting of row and column to be zero for current i,j for example if
+matrix[i][j] == 0 mark matrix[i][0] = 0 and matrix[0][j] = 0 now traverse
+for specific row and column for mark the entire for and entire colum zero.
+special case first element [0][0];
 
 Time Compelixity --> O(N*N) + O(N) + O(N)
 space --> O(1)
