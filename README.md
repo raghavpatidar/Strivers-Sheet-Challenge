@@ -20,7 +20,7 @@ And Do try the [SDE Sheet](https://lnkd.in/gcHXDXkw)
   - [7 Rotate Matrix](#7-rotate-matrix)
   - [8 Merge Intervals](#8-merge-intervals)
   - [9 Merger 2 Sorted arrays](#9-merger-2-sorted-arrays)
-  - [10 ](#10-)
+  - [10 Find Duplicate in N+1 Array](#10-find-duplicate-in-n1-array)
 
 
 
@@ -464,7 +464,55 @@ vector<int> ninjaAndSortedArrays(vector<int>& arr1, vector<int>& arr2, int m, in
 
 
 
-## [10 ](link)
+
+
+
+
+## [10 Find Duplicate in N+1 Array]([link](https://www.codingninjas.com/codestudio/problems/find-duplicate-in-array_8230816?challengeSlug=striver-sde-challenge&leftPanelTab=0))
+
+<h4>Logic :</h4>
+
+
+
+> - Cycle Detection Logic same as Linked It
+>    </br> </br>
+> Time   -> O(N)  </br>
+> Space  -> O(1) 
+
+
+
+[Code Link](./Arrays/10-find-duplicate-in-N%2B1.cpp)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+#include <bits/stdc++.h>
+
+int findDuplicate(vector<int> &arr, int n){
+	// cycle detection
+	
+	int slow = arr[0] , fast = arr[0];
+	do{
+		fast =arr[arr[fast]];
+		slow = arr[slow];
+		
+	}while(fast != slow);
+	fast = arr[0];
+	while(fast != slow){
+		fast = arr[fast];
+		slow = arr[slow];
+	}
+	return slow;
+	
+}
+
+
+```
+
+</details> 
+
+<!-- ## [10 ](link)
 <h4>Logic :</h4>
 
 
@@ -485,35 +533,8 @@ Code
 
 ```
 
-</details> 
-
-
-<!-- 
-
-## [8 ](link)
-<h4>Logic :</h4>
-
-
-
-> - Statement  </br> </br>
-> Time  Compelixity -> O()  </br>
-> Space Compelixity -> O() 
-
-
-
-[Code Link](./Arrays)
-<details>
-<summary>Code</summary>
-
-```cpp
-
-Code
-
-```
-
-</details> 
-
-
+</details>  -->
+<!--
 
 
 ## [8 ](link)
@@ -522,8 +543,8 @@ Code
 
 
 > - Statement  </br> </br>
-> Time  Compelixity -> O()  </br>
-> Space Compelixity -> O() 
+> Time   -> O()  </br>
+> Space  -> O() 
 
 
 
