@@ -342,7 +342,69 @@ void rotateMatrix(vector<vector<int>> &mat, int n, int m)
 </details> 
 
 
-<!-- ## [8 ](link)
+
+## [8 Merge Intervals](https://www.codingninjas.com/codestudio/problems/merge-intervals_8230700?challengeSlug=striver-sde-challenge)
+<h4>Logic :</h4>
+
+
+> - Sort by Start Time 
+> - push first index in answer
+> - if check is ans.back().endTime > current.startTime
+>   - then simply update endTime of ans to max of endTime of curr and ans
+> - else 
+>   - add curent item to ans 
+> 
+> </br> </br>
+> Time  Compelixity -> O(NlogN) + O(N)  </br>
+> Space Compelixity -> O(N) for Answer 
+
+
+
+[Code Link](./Arrays/08-merge-intervals.cpp)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+#include <bits/stdc++.h> 
+/*
+
+    intervals[i][0] = start point of i'th interval
+    intervals[i][1] = finish point of i'th interval
+
+*/
+static bool comp(vector<int> &a ,vector<int>&b ){
+    if(a[0] < b[0])return true;
+    else if(a[0] > b[0])return false;
+    else return a[1] < b[1]; 
+}
+
+vector<vector<int>> mergeIntervals(vector<vector<int>> &intervals)
+{
+   sort(intervals.begin() , intervals.end() , comp);
+   vector<vector<int>>ans;
+   ans.push_back(intervals[0]);
+
+   for(int i = 1 ; i < intervals.size() ; i++){
+       if(ans.back()[1] < intervals[i][0]){
+           //new
+           ans.push_back(intervals[i]);
+       }else{
+        //    update
+           ans.back()[1] =max( intervals[i][1] , ans.back()[1]);
+       }
+   }
+   cout<<endl;
+   return ans;
+}
+
+
+```
+
+</details> 
+
+
+
 <h4>Logic :</h4>
 
 
