@@ -27,13 +27,14 @@ And Do try the [SDE Sheet](https://lnkd.in/gcHXDXkw)
 <h4>Logic :</h4>
 
 
->mark starting of row and column to be zero for current i,j for example if
->matrix[i][j] == 0 mark matrix[i][0] = 0 and matrix[0][j] = 0 now traverse
->for specific row and column for mark the entire for and entire colum zero.
->special case first element [0][0];
-</br>
->Time Compelixity --> O(N*N) + O(N) + O(N)</br>
->space --> O(1)
+> - mark starting of row and column to be zero for current i,j for example if
+> - matrix[i][j] == 0 mark matrix[i][0] = 0 and matrix[0][j] = 0 now traverse
+> - for specific row and column for mark the entire for and entire colum zero.
+> - special case first element [0][0];
+> </br>
+> - Time Compelixity --> O(N*N) + O(N) + O(N)</br>
+> - space --> O(1)
+> </br>
 
 
 [Code Link](./Arrays/01-set-matrix-zero.cpp)
@@ -100,7 +101,7 @@ void setZeros(vector<vector<int>> &matrix)
 > - Approach 3 : for Complete do use NthRow fun for each Row 
 > </br>
 > - Time   -> O(N*N) </br>
->- Space  -> O(N*N) </br>
+> - Space  -> O(N*N) </br>
 > </br>
 
 
@@ -141,14 +142,14 @@ vector<vector<long long int>> printPascal(int n)
 ## [3 Next Permutation](https://www.codingninjas.com/codestudio/problems/next-permutation_8230741?challengeSlug=striver-sde-challenge)
 <h4>Logic :</h4>
 
-></br>
+> </br>
 > - Find first pivot i  from Back is arr[i+1]> arr[i]
 > - if no Pivot array is in reverse so just make reverse
 > - swap first index where arr[pivot] <br arr[i] from back
 > - reverse from pivot +1 to end;
-></br>
-Time  Compelixity -> O(N) + O(N) + O(N)  </br>
-Space Compelixity -> O(1) </br>
+> </br>
+> - Time  Compelixity -> O(N) + O(N) + O(N)  </br>
+> - Space Compelixity -> O(1) </br>
 > </br>
 
 [Code Link](./Arrays/03-next-permutation.cpp)
@@ -191,12 +192,13 @@ vector<int> nextPermutation(vector<int> &arr, int n)
 <h4>Logic :</h4>
 
 </br>
+
 > - Kaldane's Algo
 > - keep sum if any point sum is negative we know that in we have max sum is 0 so update sum to 0
 > - keep track of max sum
 > </br>
-Time  Compelixity -> O(N)  </br>
-Space Compelixity -> O(1) </br>
+> - Time  Compelixity -> O(N)  </br>
+> - Space Compelixity -> O(1) </br>
 > </br>
 
 [Code Link](./Arrays/04-maximum-subarray-sum.cpp)
@@ -227,6 +229,7 @@ long long maxSubarraySum(int arr[], int n)
 ## [5 Sort 0 1 2]((https://www.codingninjas.com/codestudio/problems/sort-0-1-2_8230695?challengeSlug=striver-sde-challenge))
 <h4>Logic :</h4>
 
+```markdown
 > </br>
 > - use Low ,Mid , High pointer
 > - keep all zero in [0 , low]
@@ -234,6 +237,7 @@ long long maxSubarraySum(int arr[], int n)
 > - keep all 2 in [high+1 , n]
 > - unsorted element in [mid , high] 
 ></br>
+```
 Time  Compelixity -> O(N)  </br>
 Space Compelixity -> O(1) </br>
 > </br>
@@ -271,10 +275,10 @@ void sort012(int *arr, int n)
 ></br>
 > - Keep Trak of last min price
 > - Update maxxprice on each idx
-></br>
->Time  Compelixity -> O(N)  </br>
->Space Compelixity -> O(1) </br>
-></br>
+> </br>
+> - Time  Compelixity -> O(N)  </br>
+> - Space Compelixity -> O(1) </br>
+> </br>
 
 [Code Link](./Arrays/06-best-time-to-buy-sell-stock.cpp)
 <details>
@@ -303,8 +307,8 @@ int maximumProfit(vector<int> &prices){
 > - Approach 1: Use 4 pointers top , down, left , right
 > - Approach 2: First Transprose Matrix then Reverse Each Row
 > </br>
->Time  Compelixity -> O(N*N)  </br>
->Space Compelixity -> O(1) </br>
+> - Time  Compelixity -> O(N*N)  </br>
+> - Space Compelixity -> O(1) </br>
 > </br>
 
 [Code Link](./Arrays/07-rotate-matrix.cpp)
