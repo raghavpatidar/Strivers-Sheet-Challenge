@@ -27,23 +27,15 @@ And Do try the [SDE Sheet](https://lnkd.in/gcHXDXkw)
 <h4>Logic :</h4>
 
 
-<!-- > - mark starting of row and column to be zero for current i,j for example if
+> - mark starting of row and column to be zero for current i,j for example if
 > - matrix[i][j] == 0 mark matrix[i][0] = 0 and matrix[0][j] = 0 now traverse
 > - for specific row and column for mark the entire for and entire colum zero.
 > - special case first element [0][0]; </br></br>
 >   Time  -> O(N*N) + O(N) + O(N)   </br>
->   Space -> O(1) -->
+>   Space -> O(1)
 
 
-```markdown
-mark starting of row and column to be zero for current i,j for example if
-matrix[i][j] == 0 mark matrix[i][0] = 0 and matrix[0][j] = 0 now traverse
-for specific row and column for mark the entire for and entire colum zero.
-special case first element [0][0];
 
-Time  -> O(N*N) + O(N) + O(N)  
-Space -> O(1)
-```
 
 
 [Code Link](./Arrays/01-set-matrix-zero.cpp)
@@ -106,9 +98,9 @@ void setZeros(vector<vector<int>> &matrix)
 
 > - Approach 1 : Nth element is n-1Cr-1
 > - Approach 2 : Get Nth Row by just using ith element is Prev * (n-i)/i
-> - Approach 3 : for Complete do use NthRow fun for each Row 
-> - Time   -> O(N*N) 
-> - Space  -> O(N*N) 
+> - Approach 3 : for Complete do use NthRow fun for each Row  </br> </br>
+>  Time   -> O(N*N)  </br>
+>  Space  -> O(N*N) 
 
 
 
@@ -153,9 +145,9 @@ vector<vector<long long int>> printPascal(int n)
 > - Find first pivot i  from Back is arr[i+1]> arr[i]
 > - if no Pivot array is in reverse so just make reverse
 > - swap first index where arr[pivot] <br arr[i] from back
-> - reverse from pivot +1 to end;
-> - Time  Compelixity -> O(N) + O(N) + O(N) 
-> - Space Compelixity -> O(1) 
+> - reverse from pivot +1 to end;  </br> </br>
+> Time   -> O(N) + O(N) + O(N)  </br>
+> Space  -> O(1) 
 
 
 [Code Link](./Arrays/03-next-permutation.cpp)
@@ -201,9 +193,9 @@ vector<int> nextPermutation(vector<int> &arr, int n)
 
 > - Kaldane's Algo
 > - keep sum if any point sum is negative we know that in we have max sum is 0 so update sum to 0
-> - keep track of max sum
-> - Time  Compelixity -> O(N) 
-> - Space Compelixity -> O(1)
+> - keep track of max sum  </br> </br>
+> Time   -> O(N)   </br>
+> Space  -> O(1)
 
 
 [Code Link](./Arrays/04-maximum-subarray-sum.cpp)
@@ -240,9 +232,9 @@ long long maxSubarraySum(int arr[], int n)
 > - keep all zero in [0 , low]
 > - keep all 1 in [low+1 , mid-1]
 > - keep all 2 in [high+1 , n]
-> - unsorted element in [mid , high] 
-> - Time  Compelixity -> O(N)  
-> - Space Compelixity -> O(1) 
+> - unsorted element in [mid , high]  </br> </br>
+>  Time   -> O(N)   </br>
+>  Space  -> O(1) 
 
 [Code Link](./Arrays/05-sort-012.cpp)
 <details>
@@ -276,9 +268,9 @@ void sort012(int *arr, int n)
 
 
 > - Keep Trak of last min price
-> - Update maxxprice on each idx
-> - Time  Compelixity -> O(N)  
-> - Space Compelixity -> O(1)
+> - Update maxxprice on each idx  </br> </br>
+>  Time   -> O(N)   </br>
+>  Space  -> O(1)
 
 [Code Link](./Arrays/06-best-time-to-buy-sell-stock.cpp)
 <details>
@@ -305,9 +297,9 @@ int maximumProfit(vector<int> &prices){
 
 
 > - Approach 1: Use 4 pointers top , down, left , right
-> - Approach 2: First Transprose Matrix then Reverse Each Row
-> - Time  Compelixity -> O(N*N) 
-> - Space Compelixity -> O(1)
+> - Approach 2: First Transprose Matrix then Reverse Each Row  </br> </br>
+>  Time   -> O(N*N)   </br>
+>  Space  -> O(1)
     
 
 [Code Link](./Arrays/07-rotate-matrix.cpp)
@@ -353,12 +345,12 @@ void rotateMatrix(vector<vector<int>> &mat, int n, int m)
 <!-- ## [8 ](link)
 <h4>Logic :</h4>
 
-></br>
->
-> </br>
->Time  Compelixity -> O()  </br>
->Space Compelixity -> O() </br>
-> </br>
+
+
+> - Statement  </br> </br>
+> Time  Compelixity -> O()  </br>
+> Space Compelixity -> O() 
+
 
 
 [Code Link](./Arrays)
@@ -371,5 +363,5 @@ Code
 
 ```
 
-</details> 
- -->
+</details>  -->
+
