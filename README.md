@@ -30,9 +30,9 @@ And Do try the [SDE Sheet](https://lnkd.in/gcHXDXkw)
 > - mark starting of row and column to be zero for current i,j for example if
 > - matrix[i][j] == 0 mark matrix[i][0] = 0 and matrix[0][j] = 0 now traverse
 > - for specific row and column for mark the entire for and entire colum zero.
-> - special case first element [0][0];
-> - Time Compelixity --> O(N*N) + O(N) + O(N)
-> - space --> O(1)
+> - special case first element [0][0]; </br></br>
+>   Time  -> O(N*N) + O(N) + O(N)   </br>
+>   Space -> O(1)
 
 
 [Code Link](./Arrays/01-set-matrix-zero.cpp)
