@@ -18,6 +18,9 @@ And Do try the [SDE Sheet](https://lnkd.in/gcHXDXkw)
   - [5 Sort 0 1 2](#5-sort-0-1-2)
   - [6 Best Time to Buy and Sell Stock](#6-best-time-to-buy-and-sell-stock)
   - [7 Rotate Matrix](#7-rotate-matrix)
+  - [8 Merge Intervals](#8-merge-intervals)
+  - [9 Merger 2 Sorted arrays](#9-merger-2-sorted-arrays)
+  - [10 ](#10-)
 
 
 
@@ -405,6 +408,348 @@ vector<vector<int>> mergeIntervals(vector<vector<int>> &intervals)
 
 
 
+
+
+## [9 Merger 2 Sorted arrays]([link](https://www.codingninjas.com/codestudio/problems/merge-two-sorted-arrays_8230835?challengeSlug=striver-sde-challenge))
+
+<h4>Logic :</h4>
+
+> - Approach 1 : 
+>   - first pointer at end of arr1
+>   - second at start of arr2 compare and move 
+>   - Sort both array and return;
+> - Approach 2 :
+>   - Gap Method   
+>   - Reduce Gap by so ans swap if Grater </br> 
+> 
+>
+> Time  Compelixity -> O(NLogN)  </br>
+> Space Compelixity -> O(1) 
+
+
+
+[Code Link](./Arrays/09-merge-sorted-array.cpp)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+#include <bits/stdc++.h>
+
+vector<int> ninjaAndSortedArrays(vector<int>& arr1, vector<int>& arr2, int m, int n) {
+	 int i = arr1.size()-1 , j = arr2.size()-1;
+	 while(i>=0 and j>=0){
+		 arr1[i--] =arr2[j--];
+	 }
+	 int len = arr1.size();
+	 int gap = (len/2 + len%2);
+	 while(gap > 0){
+		 int l = 0 ,r = gap;
+		 while(r < arr1.size()){
+			 if(arr1[l] > arr1[r] )swap(arr1[l] , arr1[r]);
+			 l++ , r++;
+		 }
+		 if(gap == 1)break;
+		 gap = gap/2 + gap%2;
+		 
+	 }
+	 return arr1;
+}
+
+
+```
+
+</details> 
+
+
+
+
+## [10 ](link)
+<h4>Logic :</h4>
+
+
+
+> - Statement  </br> </br>
+> Time  Compelixity -> O()  </br>
+> Space Compelixity -> O() 
+
+
+
+[Code Link](./Arrays)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+Code
+
+```
+
+</details> 
+
+
+<!-- 
+
+## [8 ](link)
+<h4>Logic :</h4>
+
+
+
+> - Statement  </br> </br>
+> Time  Compelixity -> O()  </br>
+> Space Compelixity -> O() 
+
+
+
+[Code Link](./Arrays)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+Code
+
+```
+
+</details> 
+
+
+
+
+## [8 ](link)
+<h4>Logic :</h4>
+
+
+
+> - Statement  </br> </br>
+> Time  Compelixity -> O()  </br>
+> Space Compelixity -> O() 
+
+
+
+[Code Link](./Arrays)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+Code
+
+```
+
+</details> 
+
+
+
+
+## [8 ](link)
+<h4>Logic :</h4>
+
+
+
+> - Statement  </br> </br>
+> Time  Compelixity -> O()  </br>
+> Space Compelixity -> O() 
+
+
+
+[Code Link](./Arrays)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+Code
+
+```
+
+</details> 
+
+
+
+## [8 ](link)
+<h4>Logic :</h4>
+
+
+
+> - Statement  </br> </br>
+> Time  Compelixity -> O()  </br>
+> Space Compelixity -> O() 
+
+
+
+[Code Link](./Arrays)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+Code
+
+```
+
+</details> 
+
+
+
+
+## [8 ](link)
+<h4>Logic :</h4>
+
+
+
+> - Statement  </br> </br>
+> Time  Compelixity -> O()  </br>
+> Space Compelixity -> O() 
+
+
+
+[Code Link](./Arrays)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+Code
+
+```
+
+</details> 
+
+
+
+
+## [8 ](link)
+<h4>Logic :</h4>
+
+
+
+> - Statement  </br> </br>
+> Time  Compelixity -> O()  </br>
+> Space Compelixity -> O() 
+
+
+
+[Code Link](./Arrays)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+Code
+
+```
+
+</details> 
+
+
+
+
+## [8 ](link)
+<h4>Logic :</h4>
+
+
+
+> - Statement  </br> </br>
+> Time  Compelixity -> O()  </br>
+> Space Compelixity -> O() 
+
+
+
+[Code Link](./Arrays)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+Code
+
+```
+
+</details> 
+
+
+
+
+## [8 ](link)
+<h4>Logic :</h4>
+
+
+
+> - Statement  </br> </br>
+> Time  Compelixity -> O()  </br>
+> Space Compelixity -> O() 
+
+
+
+[Code Link](./Arrays)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+Code
+
+```
+
+</details> 
+
+
+
+
+## [8 ](link)
+<h4>Logic :</h4>
+
+
+
+> - Statement  </br> </br>
+> Time  Compelixity -> O()  </br>
+> Space Compelixity -> O() 
+
+
+
+[Code Link](./Arrays)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+Code
+
+```
+
+</details> 
+
+
+
+
+## [8 ](link)
+<h4>Logic :</h4>
+
+
+
+> - Statement  </br> </br>
+> Time  Compelixity -> O()  </br>
+> Space Compelixity -> O() 
+
+
+
+[Code Link](./Arrays)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+Code
+
+```
+
+</details> 
+
+
+
+
+## [8 ](link)
 <h4>Logic :</h4>
 
 
@@ -426,4 +771,6 @@ Code
 ```
 
 </details>  -->
+
+
 
