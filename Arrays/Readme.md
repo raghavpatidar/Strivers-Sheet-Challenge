@@ -12,7 +12,7 @@ S.No. | Question Name | Logic Used  | Time | Space
 8 | [Merge Intervals](./08-merge-intervals.cpp) |Sort by Start time and compart last and curr| O(NlogN) +O(N) | O(N)  
 9 | [Merger Sorted Arrays](./09-merge-sorted-array.cpp) |Gap Method| O(N+M) | O(1)  
 10 | [Find Duplicate in N+1 array](./10-find-duplicate-in-N%2B1.cpp) |Cycle Detection| O(N) | O(1) 
-11 | []() || O() | O() 
+11 | [Missing Repeaiting and Duplicate Number](./11-missing-rrepeting-number.cpp) |Xor , mark indx Visited| O(N) | O(1) 
 <!-- 12 | []() || O() | O() 
 13 | []() || O() | O() 
 14 | []() || O() | O() 
