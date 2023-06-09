@@ -21,6 +21,7 @@ And Do try the [SDE Sheet](https://lnkd.in/gcHXDXkw)
   - [8 Merge Intervals](#8-merge-intervals)
   - [9 Merger 2 Sorted arrays](#9-merger-2-sorted-arrays)
   - [10 Find Duplicate in N+1 Array](#10-find-duplicate-in-n1-array)
+  - [10 Missing Duplicate ](#10-missing-duplicate-)
 
 
 
@@ -512,28 +513,54 @@ int findDuplicate(vector<int> &arr, int n){
 
 </details> 
 
-<!-- ## [10 ](link)
+## [10 Missing Duplicate ](https://www.codingninjas.com/codestudio/problems/missing-and-repeating-numbers_8230733?challengeSlug=striver-sde-challenge)
 <h4>Logic :</h4>
 
 
 
-> - Statement  </br> </br>
-> Time  Compelixity -> O()  </br>
-> Space Compelixity -> O() 
+> - Mark Index Visited by marking them negative is we find negative index so current element is our duplicate elmenet
+> - and after marking which index is postive value is our missing elemnt  </br> </br>
+> Time  Compelixity -> O(N)  </br>
+> Space Compelixity -> O(1) 
 
 
 
-[Code Link](./Arrays)
+[Code Link](./Arrays/11-missing-rrepeting-number.cpp)
+
 <details>
 <summary>Code</summary>
 
 ```cpp
 
-Code
+#include <bits/stdc++.h>
+
+pair<int,int> missingAndRepeating(vector<int> &arr, int n)
+{
+	int d , m;
+
+	for(int i = 0; i < n ; i++){
+		int idx = abs(arr[i]);
+		idx--;
+		if(arr[idx] < 0){
+			d = abs(arr[i]);
+		}else{
+			arr[idx] = -arr[idx];
+		}
+	}
+
+	for(int i = 0 ; i < n ;i++ )if(arr[i] > 0 )m = i+1;
+	return {m ,d};
+	
+}
+
 
 ```
 
-</details>  -->
+</details> 
+
+
+
+
 <!--
 
 
