@@ -22,6 +22,8 @@ And Do try the [SDE Sheet](https://lnkd.in/gcHXDXkw)
   - [9 Merger 2 Sorted arrays](#9-merger-2-sorted-arrays)
   - [10 Find Duplicate in N+1 Array](#10-find-duplicate-in-n1-array)
   - [10 Missing Duplicate ](#10-missing-duplicate-)
+  - [12 Search in 2D matrix - Binary Search 2D ](#12-search-in-2d-matrix---binary-search-2d-)
+  - [14 Modular Exponation](#14-modular-exponation)
 
 
 
@@ -561,59 +563,101 @@ pair<int,int> missingAndRepeating(vector<int> &arr, int n)
 
 
 
+
+
+## [12 Search in 2D matrix - Binary Search 2D ](https://www.codingninjas.com/codestudio/problems/search-in-a-2d-matrix_8230773?challengeSlug=striver-sde-challenge)
+
+<h4>Logic :</h4>
+
+
+
+> - think of straight line 0 to n*m-1
+> - row = mid/m 
+> - col = mid%m  </br> </br>
+> Time   -> O(log(N*M))  </br>
+> Space  -> O(1) 
+
+
+
+[Code Link](./Arrays/12-search-in2d-matrix.cpp)
+
+<details>
+<summary>Code</summary>
+
+```cpp
+
+bool searchMatrix(vector<vector<int>>& mat, int target) {
+        int n = mat.size() , m = mat[0].size();
+        int l = 0 , r = n*m-1;
+        while(l <= r){
+            int mid = l + (r-l)/2;
+            int row = mid/m , col = mid%m;
+            if(mat[row][col] == target)return true;
+            else if(mat[row][col] < target){
+                //right part
+                l = mid +1;
+            }else{
+                r = mid - 1;
+            }
+        }
+        return false;
+}
+
+```
+
+</details> 
+
+
+
+
+## [14 Modular Exponation]([link](https://www.codingninjas.com/codestudio/problems/modular-exponentiation_8230803?challengeSlug=striver-sde-challenge))
+
+<h4>Logic :</h4>
+
+
+
+> - If power is event make squre of base and divide power by 2
+> - if power is odd miltipy base to ans and make pow decrease by 1   </br> </br>
+> Time  Compelixity -> O(log(N))  </br>
+> Space Compelixity -> O(1) 
+
+
+
+
+[Code Link](./Arrays/14-modular-emponetion.cpp)
+<details>
+<summary>Code</summary>
+
+```cpp
+
+#include <bits/stdc++.h>
+
+int modularExponentiation(int x, int n, int m) {
+	// Write your code here.
+	// x^n%m;
+	long  ans = 1;
+	long xx = x;
+	while(n >0 )
+	{
+		if(n%2 == 1){
+			ans = (ans%m * xx%m)%m;
+			// n--;
+		} 
+		xx = (xx%m * xx%m)%m;
+		n = n >> 1;
+    }
+	return ans%m;
+
+
+    
+}
+
+```
+
+</details> 
+
+
 <!--
-
-
-## [8 ](link)
-<h4>Logic :</h4>
-
-
-
-> - Statement  </br> </br>
-> Time   -> O()  </br>
-> Space  -> O() 
-
-
-
-[Code Link](./Arrays)
-<details>
-<summary>Code</summary>
-
-```cpp
-
-Code
-
-```
-
-</details> 
-
-
-
-
-## [8 ](link)
-<h4>Logic :</h4>
-
-
-
-> - Statement  </br> </br>
-> Time  Compelixity -> O()  </br>
-> Space Compelixity -> O() 
-
-
-
-[Code Link](./Arrays)
-<details>
-<summary>Code</summary>
-
-```cpp
-
-Code
-
-```
-
-</details> 
-
-
 
 ## [8 ](link)
 <h4>Logic :</h4>
